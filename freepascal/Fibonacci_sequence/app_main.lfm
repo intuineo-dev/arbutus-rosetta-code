@@ -1,0 +1,263 @@
+object Form1: TForm1
+  Left = 711
+  Height = 273
+  Top = 451
+  Width = 552
+  Caption = 'Fibonacci sequence'
+  ClientHeight = 273
+  ClientWidth = 552
+  LCLVersion = '2.0.10.0'
+  object MemoResult: TMemo
+    Left = 10
+    Height = 193
+    Top = 70
+    Width = 532
+    Align = alClient
+    BorderSpacing.Top = 60
+    BorderSpacing.Around = 10
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object PanelFromTo: TPanel
+    Left = 10
+    Height = 50
+    Top = 8
+    Width = 198
+    BevelColor = 16759929
+    BevelOuter = bvSpace
+    Caption = ' '
+    ClientHeight = 50
+    ClientWidth = 198
+    TabOrder = 1
+    object LabelFrom: TLabel
+      AnchorSideTop.Control = SpinEditFrom
+      AnchorSideTop.Side = asrCenter
+      Left = 9
+      Height = 15
+      Top = 18
+      Width = 28
+      Caption = 'From'
+      ParentColor = False
+    end
+    object SpinEditFrom: TSpinEdit
+      AnchorSideLeft.Control = LabelFrom
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = PanelFromTo
+      AnchorSideTop.Side = asrCenter
+      Left = 43
+      Height = 23
+      Top = 14
+      Width = 53
+      Alignment = taCenter
+      BorderSpacing.Left = 6
+      MaxValue = 1000
+      TabOrder = 0
+    end
+    object LabelTo: TLabel
+      AnchorSideTop.Control = SpinEditTo
+      AnchorSideTop.Side = asrCenter
+      Left = 113
+      Height = 15
+      Top = 18
+      Width = 14
+      Caption = 'To'
+      ParentColor = False
+    end
+    object SpinEditTo: TSpinEdit
+      AnchorSideLeft.Control = LabelTo
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = PanelFromTo
+      AnchorSideTop.Side = asrCenter
+      Left = 133
+      Height = 23
+      Top = 14
+      Width = 53
+      Alignment = taCenter
+      BorderSpacing.Left = 6
+      MaxValue = 1000
+      MinValue = 1
+      TabOrder = 1
+      Value = 29
+    end
+  end
+  object PanelExecute: TPanel
+    Left = 240
+    Height = 50
+    Top = 8
+    Width = 302
+    BevelColor = 16759929
+    BevelOuter = bvSpace
+    Caption = ' '
+    ClientHeight = 50
+    ClientWidth = 302
+    TabOrder = 2
+    object SpinEditIterations: TSpinEdit
+      AnchorSideLeft.Control = LabelIterations
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = PanelExecute
+      AnchorSideTop.Side = asrCenter
+      Left = 66
+      Height = 23
+      Top = 14
+      Width = 53
+      Alignment = taCenter
+      BorderSpacing.Left = 6
+      MaxValue = 1000
+      TabOrder = 0
+      Value = 100
+    end
+    object LabelIterations: TLabel
+      AnchorSideTop.Control = SpinEditIterations
+      AnchorSideTop.Side = asrCenter
+      Left = 16
+      Height = 15
+      Top = 18
+      Width = 44
+      Caption = 'Iteration'
+      ParentColor = False
+    end
+    object BtnRun: TBCButton
+      AnchorSideTop.Control = PanelExecute
+      AnchorSideTop.Side = asrCenter
+      Left = 200
+      Height = 31
+      Top = 10
+      Width = 91
+      StateClicked.Background.Color = 16245964
+      StateClicked.Background.Gradient1.StartColor = 16577765
+      StateClicked.Background.Gradient1.EndColor = 16180676
+      StateClicked.Background.Gradient1.GradientType = gtLinear
+      StateClicked.Background.Gradient1.Point1XPercent = 50
+      StateClicked.Background.Gradient1.Point1YPercent = 100
+      StateClicked.Background.Gradient1.Point2XPercent = 0
+      StateClicked.Background.Gradient1.Point2YPercent = 100
+      StateClicked.Background.Gradient2.StartColor = 15716760
+      StateClicked.Background.Gradient2.EndColor = 14398312
+      StateClicked.Background.Gradient2.GradientType = gtLinear
+      StateClicked.Background.Gradient2.Point1XPercent = 0
+      StateClicked.Background.Gradient2.Point1YPercent = 0
+      StateClicked.Background.Gradient2.Point2XPercent = 0
+      StateClicked.Background.Gradient2.Point2YPercent = 100
+      StateClicked.Background.Gradient1EndPercent = 55
+      StateClicked.Background.Style = bbsColor
+      StateClicked.Border.Color = 10048512
+      StateClicked.Border.LightColor = clBlack
+      StateClicked.Border.LightOpacity = 100
+      StateClicked.Border.Style = bboSolid
+      StateClicked.FontEx.Color = clBlack
+      StateClicked.FontEx.FontQuality = fqSystemClearType
+      StateClicked.FontEx.Shadow = False
+      StateClicked.FontEx.ShadowRadius = 5
+      StateClicked.FontEx.ShadowOffsetX = 5
+      StateClicked.FontEx.ShadowOffsetY = 5
+      StateClicked.FontEx.Style = []
+      StateHover.Background.Color = 16511461
+      StateHover.Background.Gradient1.StartColor = 16643818
+      StateHover.Background.Gradient1.EndColor = 16576729
+      StateHover.Background.Gradient1.GradientType = gtLinear
+      StateHover.Background.Gradient1.Point1XPercent = 50
+      StateHover.Background.Gradient1.Point1YPercent = 100
+      StateHover.Background.Gradient1.Point2XPercent = 0
+      StateHover.Background.Gradient1.Point2YPercent = 100
+      StateHover.Background.Gradient2.StartColor = 16639678
+      StateHover.Background.Gradient2.EndColor = 16112039
+      StateHover.Background.Gradient2.GradientType = gtLinear
+      StateHover.Background.Gradient2.Point1XPercent = 0
+      StateHover.Background.Gradient2.Point1YPercent = 0
+      StateHover.Background.Gradient2.Point2XPercent = 0
+      StateHover.Background.Gradient2.Point2YPercent = 100
+      StateHover.Background.Gradient1EndPercent = 50
+      StateHover.Background.Style = bbsColor
+      StateHover.Border.Color = 14120960
+      StateHover.Border.LightOpacity = 200
+      StateHover.Border.Style = bboSolid
+      StateHover.FontEx.Color = clBlack
+      StateHover.FontEx.FontQuality = fqSystemClearType
+      StateHover.FontEx.Shadow = False
+      StateHover.FontEx.ShadowRadius = 5
+      StateHover.FontEx.ShadowOffsetX = 5
+      StateHover.FontEx.ShadowOffsetY = 5
+      StateHover.FontEx.Style = []
+      StateNormal.Background.Color = 14803425
+      StateNormal.Background.Gradient1.StartColor = 15921906
+      StateNormal.Background.Gradient1.EndColor = 15461355
+      StateNormal.Background.Gradient1.GradientType = gtLinear
+      StateNormal.Background.Gradient1.Point1XPercent = 0
+      StateNormal.Background.Gradient1.Point1YPercent = 0
+      StateNormal.Background.Gradient1.Point2XPercent = 0
+      StateNormal.Background.Gradient1.Point2YPercent = 100
+      StateNormal.Background.Gradient2.StartColor = 14540253
+      StateNormal.Background.Gradient2.EndColor = 13619151
+      StateNormal.Background.Gradient2.GradientType = gtLinear
+      StateNormal.Background.Gradient2.Point1XPercent = 50
+      StateNormal.Background.Gradient2.Point1YPercent = 100
+      StateNormal.Background.Gradient2.Point2XPercent = 0
+      StateNormal.Background.Gradient2.Point2YPercent = 100
+      StateNormal.Background.Gradient1EndPercent = 50
+      StateNormal.Background.Style = bbsColor
+      StateNormal.Border.Color = 11382189
+      StateNormal.Border.LightOpacity = 200
+      StateNormal.Border.Style = bboSolid
+      StateNormal.FontEx.Color = clBlack
+      StateNormal.FontEx.FontQuality = fqSystemClearType
+      StateNormal.FontEx.Shadow = False
+      StateNormal.FontEx.ShadowRadius = 5
+      StateNormal.FontEx.ShadowOffsetX = 5
+      StateNormal.FontEx.ShadowOffsetY = 5
+      StateNormal.FontEx.Style = []
+      Caption = 'Execute'
+      Color = clNone
+      DropDownWidth = 16
+      DropDownArrowSize = 0
+      GlobalOpacity = 255
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FF0000
+        00FF000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FF5B43
+        2AFF000000FF0000000000000000000000000000000000000000000000000000
+        0000000000FF000000FF000000FF000000FF000000FF000000FF000000FF8865
+        3FFF5B432AFF000000FF00000000000000000000000000000000000000000000
+        0000000000FF966F45FF785937FF785937FF785937FF785937FF785937FF8865
+        3FFF88653FFF5B432AFF000000FF000000000000000000000000000000000000
+        0000000000FF9C7449FF88653FFF88653FFF88653FFF88653FFF88653FFF8865
+        3FFF88653FFF88653FFF5B432AFF000000FF0000000000000000000000000000
+        0000000000FFCCB091FFD1B89EFFCFB59AFFCFB59AFFD0B69BFFD1B79CFFD1B7
+        9CFFD1B79CFFD3BAA0FFCEB295FFA3794CFF000000FF00000000000000000000
+        0000000000FFD0B69BFFD3BAA0FFD1B79CFFD1B79CFFD0B69BFFCFB59AFFD3BA
+        A0FFD1B79CFFCEB397FFB48B5FFF000000FF0000000000000000000000000000
+        0000000000FFDCC9B5FFDAC5AFFFDBC7B2FFDDCAB6FFDDCAB6FFDDCAB6FFD5BD
+        A4FFD1B79CFFAD8050FF110D08FF000000000000000000000000000000000000
+        0000000000FF000000FF000000FF000000FF000000FF000000FF000000FFD1B8
+        9EFFAD8050FF000000FF00000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FFB288
+        5BFF000000FF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FF0000
+        00FF000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      GlyphAlignment = bcaRightCenter
+      GlyphMargin = 0
+      OnClick = BtnRunClick
+      ParentColor = False
+      Rounding.RoundX = 14
+      Rounding.RoundY = 14
+      RoundingDropDown.RoundX = 1
+      RoundingDropDown.RoundY = 1
+      TextApplyGlobalOpacity = False
+      DropDownArrow = True
+      DropDownStyle = bdsCommon
+      MemoryUsage = bmuHigh
+    end
+  end
+end
